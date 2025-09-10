@@ -1,0 +1,95 @@
+/* CSS Boilerplate */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	border: 1px solid #000;
+	color: #222;
+}
+
+.flex {
+	display: flex;
+}
+
+.row {
+	flex-direction: row;
+}
+
+.column {
+	flex-direction: column;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 1rem;
+}
+
+header {
+	align-items: center;
+	justify-content: space-between;
+}
+
+header,
+#content > * {
+	padding-left: 3rem;
+	padding-right: 3rem;
+}
+
+nav {
+	flex: 1;
+	justify-content: space-evenly;
+}
+
+h1 {
+	flex: 1;
+}
+
+#hero {
+	background: url('./assets/tripleDipper.jpg') no-repeat center center/cover;
+	padding-top: 200px;
+	padding-bottom: 200px;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 20px;
+}
+
+#hero.flex.row > * {
+	flex: 1;
+	text-align: center;
+	color: white;
+}
+
+#hero .container {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 1rem;
+	border-radius: 10px;
+}
+
+#menu {
+	text-align: center;
+}
+
+.card {
+	border: 1px solid #000;
+	border-radius: 10px;
+	padding: 1rem;
+	text-align: center;
+}
+
+#about .card {
+	width: 60%;
+}
+
+#about {
+	align-items: center;
+}
